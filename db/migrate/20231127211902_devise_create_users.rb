@@ -5,13 +5,13 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
     create_table :users do |t|
       
       ## Your custom fields
-      t.string :firstname, null: false
-      t.string :lastname, null: false
-      t.string :email, null: false, default: ""
+      t.string :first_name, null: false
+      t.string :last_name, null: false
       t.string :phone
-      t.integer :role_id #this line has been removed
+      t.boolean :opt_to_text
 
       ## Database authenticatable
+      t.string :email, null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
