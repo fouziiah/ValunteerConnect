@@ -7,11 +7,21 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <% stylesheet_link_tag 'home.css' %>
     <%= javascript_importmap_tags %>
+
   </head>
 
   <body>
     <nav>
+    <div class="container">
+    <div class="nav-container">
+        <%= link_to "Home", root_path %>
+        <a href="#">Organization</a>
+        <a href="#">Volunteer Opportunities</a>
+        <%= link_to "Log in", new_user_session_path, method: :get%>
+    </div>
+</div>
       <%= render 'shared/sign_out' %>
     </nav>
 

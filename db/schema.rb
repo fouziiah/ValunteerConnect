@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_28_211954) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_02_012042) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "roles", force: :cascade do |t|
-    t.string "type"
+  create_table "organizations", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "location"
+    t.string "poc_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,9 +39,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_211954) do
     t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "organization_id"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["organization_id"], name: "index_users_on_organization_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "users", "organizations"
 end
