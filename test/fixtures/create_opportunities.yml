@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  location: MyString
+  date: 2023-12-02
+  time: 2023-12-02 12:54:00
+  poc_email: MyString
+
+two:
+  title: MyString
+  description: MyText
+  location: MyString
+  date: 2023-12-02
+  time: 2023-12-02 12:54:00
+  poc_email: MyString
