@@ -1,0 +1,10 @@
+{
+  "name": "volunteer-connect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fouziiah/VolunteerConnect.git",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

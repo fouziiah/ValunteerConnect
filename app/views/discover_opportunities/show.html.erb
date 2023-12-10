@@ -1,0 +1,17 @@
+<h1><%= @create_opportunity.title %></h1>
+<p><strong>Organization:</strong> <%= @create_opportunity.organization_name %></p>
+<p><strong>Description:</strong> <%= @create_opportunity.description %></p>
+<p><strong>Location:</strong> <%= @create_opportunity.location %></p>
+<button id="interestedBtn" data-opportunity-id="<%= @create_opportunity.id %>">Interested</button><br><br>
+
+
+<button>
+  <%= link_to "Edit Opportunity", edit_opportunity_path(@create_opportunity) %>
+</button>
+
+
+<%= button_to "Delete Opportunity", create_opportunity_path(@create_opportunity), method: :delete, data: { confirm: "Are you sure?" } %>
+
+
+<%= link_to "Back to discover opportunities", search_opportunities_path %>
+

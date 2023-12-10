@@ -10,9 +10,13 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+    //= require 'home'
+    //= require 'create_opportunities'
+    //= require 'search'
+    //= require 'volunteer'
+    
  */
+
 
  body {
     font-family: Arial, sans-serif;
@@ -22,32 +26,37 @@
 }
 
 .container {
-    background-color: #333;
+    background-color: #353535;
     color: white;
-    padding: 10px; 
+    padding: 20px; 
     display: flex;
-    /* justify-content: flex-end; */
     height: 45px;
     gap: 3rem;
     position: relative;
-  
-   
 }
+
 .nav-container{
     position: absolute;
-    right: 4em;
-    top: 25px;
+    right: 9em;
+    top: 32px;
 }
+
 .container a {
     color: white;
     text-decoration: none;
     margin: 0 25px;
     margin-top: 20px;
-
-    
 }
 
 .content {
     max-width: 960px;
     margin: 20px auto;
+
+}
+
+.sign-out-button {
+    position: relative;
+    top: 0.4em;
+    left: 77em;
+
 }

@@ -1,0 +1,16 @@
+<%= puts "Rendering _search_results.html.erb for #{@opportunities.size} opportunities" %>
+
+<div class="volunteer-container">
+<% @opportunities.each do |opportunity| %>
+  <div>
+    <span><%= opportunity.title %></span>
+    <p><strong>Organization: </strong><%= opportunity.organization_name %></p>
+    <p><%= opportunity.description %></p>
+    <p><strong>Location:</strong> <%= opportunity.location %></p>
+    <button><%= link_to 'Learn More', show_opportunity_path(opportunity) %></button>
+<hr>
+  </div>
+<% end %>
+    
+</div>
+  
