@@ -6,23 +6,41 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <% stylesheet_link_tag 'home.css' %>
+  
+
+    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'home.css' %>
+    <%= stylesheet_link_tag 'create_opportunities.css' %>
+    <%= stylesheet_link_tag 'search.css' %>
+    <%= stylesheet_link_tag 'volunteer.css' %>
     <%= javascript_importmap_tags %>
 
+
+
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.6.0.min.js' %>
+    <%= javascript_include_tag 'add_jquery' %>
+    <%= javascript_include_tag 'api_button' %>
+
+    
   </head>
 
   <body>
     <nav>
     <div class="container">
     <div class="nav-container">
-        <%= link_to "Home", root_path %>
-        <a href="#">Discover Opportunities</a>
-        <a href="#">Create Opportunities</a>
-        <%= link_to "Log in", new_user_session_path, method: :get%>
+        <%= link_to "Home", root_path, style: "font-size: 17px;"  %>
+        <%= link_to "Discover Opportunities", search_opportunities_path , style: "font-size: 17px;" %>
+        
+        <% if user_signed_in? %>
+          <% if current_user.organization? %>
+            <%= link_to "Create Opportunities", new_create_opportunity_path %>
+          <% end %>
+          <% else %>
+            <%= link_to "Log in", new_user_session_path, style: "font-size: 17px;"  %>
+          <% end %>
     </div>
+    <%= render 'shared/sign_out' %>
 </div>
-      <%= render 'shared/sign_out' %>
     </nav>
 
     <p class="notice"><%= notice %></p>

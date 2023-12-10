@@ -1,0 +1,30 @@
+.form-container {
+    max-width: 40%;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    text-align: center;
+  }
+  
+ 
+  
+  

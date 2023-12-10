@@ -1,7 +1,8 @@
 
 .homepage-header {
     margin-top: 50px;
-    /* Add any additional styling you want for the header */
+    color: rgb(235, 211, 33);
+    
   }
   
   .homepage-header h1 {
@@ -14,14 +15,13 @@
     margin-top: 20px;
     width: 25em;
 
-    /* Add any additional styling you want for the content */
   }
   
   .homepage-content p {
     text-indent: 0;
     font-size: 1.2em;
     line-height: 1.5;
-    color: #555; /* Adjust the color as needed */
+    color: #2e16b5; 
   }
 
   .home-container {
@@ -35,22 +35,20 @@
     font-size: 20px;
     margin-left: 8em;
     margin-top: 2em;
-    /* border: none; */
+
   }
 
-  /* styles.css */
 
-div img {
-  position: absolute;
-  bottom: 12em;
-  left: 46em;
-  width: 40rem;
-  height: auto;
-  
-  /* border-radius: 10px;  */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
 
-div .logo img{
-  position: absolute;
-}
+  div img {
+    position: absolute;
+    bottom: 12em;
+    left: 46em;
+    width: 40rem;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  div .logo img{
+    position: absolute;
+  }
