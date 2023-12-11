@@ -1,6 +1,9 @@
+<div class="organazation-form"
 <%= form_with(model: @create_opportunity) do |form| %>
-    <div class="form-container">
-    
+   
+    <h1 class="organization-form-title">Create Opportunities</h1>
+    <p class="organization-form-description">Inspire collaboration, drive impactful change, and create purposeful engagements that empower individuals for lasting societal impact.</p>
+
     <div class="form-group">
         <%= form.label :title, class: 'form-label' %>
         <%= form.text_field :title, class: 'form-control', placeholder: "Enter title" %>
@@ -40,6 +43,7 @@
     <div class="form-group submit-button">
           <%= form.submit "Create Opportunity" %>
     </div>
-    
-    </div>
+ 
       <% end %>
+
+</div>
