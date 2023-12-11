@@ -1,16 +1,37 @@
-.form-container {
-    max-width: 40%;
-    margin: auto;
-  }
+.organazation-form{
+  background-color: rgba(227, 222, 222, 0.432);
+  width: 40em;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   
+
+/* Add these styles to your CSS file */
+
+.organization-form-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.organization-form-description {
+  font-size: 15.3px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
   .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .form-label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   .form-control {

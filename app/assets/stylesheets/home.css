@@ -40,15 +40,16 @@
 
 
 
-  div img {
+ .home{
     position: absolute;
-    bottom: 12em;
-    left: 46em;
+    bottom: 36em;
+    left: 37em;
     width: 40rem;
     height: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
 
-  div .logo img{
+  .home img{
     position: absolute;
+    
   }
