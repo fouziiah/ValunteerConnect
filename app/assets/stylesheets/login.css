@@ -1,29 +1,28 @@
 
 .login-container{
-    background-color: rgb(242, 237, 237);
+    background-color: white;
     width:28em;
     height: 25em;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    left: 46em;
+    left: 30em;
     top: 10.1em;
     padding: 20px;
 }
 
-.login-image img{
+/* .login-image img{
     position: absolute;
     right: 44em;
     bottom: 7.1em;
     width: 550px;
     height: 439px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* z-index: 1; */
-}
+} */
 
 input {
     padding: 8px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #e2dfdf;
     border-radius: 4px;
   }
 
@@ -65,6 +64,8 @@ input {
   }
   
   input[type="submit"]:hover {
-    background-color: #2a1d68;
+    background-color: rgb(248, 248, 248);
+    border: 2px solid #e6672c;
+    color: black;
   }
    

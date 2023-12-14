@@ -1,14 +1,13 @@
 
 .homepage-header {
     margin-top: 50px;
-    color: rgb(235, 211, 33);
+    color: black;
     
   }
-  
+
   .homepage-header h1 {
     font-size: 4.1rem;
     font-weight: bold;
-  
   }
 
   .homepage-content {
@@ -21,12 +20,15 @@
     text-indent: 0;
     font-size: 1.2em;
     line-height: 1.5;
-    color: #2e16b5; 
+    color: black;
   }
 
   .home-container {
+    background-color: white;
     margin-left: 7em;
     margin-top: 10em;
+    width: 80em;
+    height: auto;
   }
   .home-btn button{
     font-weight: 700;
@@ -38,18 +40,49 @@
 
   }
 
-
-
- .home{
+  .people-animation img{
     position: absolute;
-    bottom: 36em;
-    left: 37em;
-    width: 40rem;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    bottom: 9em;
+    left: 43em; 
+    width: 710px;
+    height: 500px;
   }
 
-  .home img{
-    position: absolute;
-    
+  .home-btn button {
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px 27px;
+    border: 2px solid #e6672c; 
+    border-radius:30px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
   }
+  
+  .home-btn button:hover {
+    background-color: #3498db; 
+    color: #ffffff;
+    border-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    margin: 5em auto;
+    padding: 0.5em;
+  }
+
+  .people-animation img {
+    bottom: 3em;
+    top: 46em;
+    width: 100%;
+    height: auto; 
+    left: 0; 
+  }
+
+  .home-btn button {
+    position: absolute;
+    top: 53em;
+  }
+}

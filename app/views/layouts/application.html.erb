@@ -15,6 +15,7 @@
     <%= stylesheet_link_tag 'volunteer.css' %>
     <%= stylesheet_link_tag 'login.css' %>
     <%= stylesheet_link_tag 'signup.css' %>
+    <%= stylesheet_link_tag 'volunteer_show.css' %>
     <%= javascript_importmap_tags %>
 
 
@@ -27,23 +28,28 @@
   </head>
 
   <body>
-    <nav>
-    <div class="container">
-    <div class="nav-container">
-        <%= link_to "Home", root_path, style: "font-size: 17px;"  %>
-        <%= link_to "Discover Opportunities", search_opportunities_path , style: "font-size: 17px;" %>
-        
-        <% if user_signed_in? %>
-          <% if current_user.organization? %>
-            <%= link_to "Create Opportunities", new_create_opportunity_path %>
-          <% end %>
-          <% else %>
-            <%= link_to "Log in", new_user_session_path, style: "font-size: 17px;"  %>
-          <% end %>
+  <nav>
+  <div class="container">
+    <div class="logo">
+      <%= image_tag("logo.png", alt: "logo") %>
+      <span class="logo-text">VolunteerConnect</span>
     </div>
-    <%= render 'shared/sign_out' %>
-</div>
-    </nav>
+    
+    <div class="nav-container">
+      <ul class="navbar">
+        <li><%= link_to 'Home', root_path, style: "font-size: 17px;" %></li>
+        <li><%= link_to 'Volunteers', search_opportunities_path, style: "font-size: 17px;" %></li>
+        <li>
+          <%= user_signed_in? ? (current_user.organization? ? link_to('Organization', new_create_opportunity_path) : '') : link_to('Log in', new_user_session_path, style: 'font-size: 17px;') %>
+        </li>
+        <li>
+          <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'sign-out' if user_signed_in? %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
