@@ -8,9 +8,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
   
-
-/* Add these styles to your CSS file */
-
 .organization-form-title {
   font-size: 28px;
   font-weight: bold;
@@ -31,7 +28,6 @@
   .form-label {
     display: block;
     margin-bottom: 8px;
-    /* font-weight: bold; */
   }
   
   .form-control {
@@ -42,10 +38,27 @@
     box-sizing: border-box;
   }
   
+
   .submit-button {
     text-align: center;
   }
   
  
   
+  @media only screen and (max-width: 768px) {
+    .organazation-form {
+      width: 90%;
+    }
   
+    .organization-form-title {
+      font-size: 24px;
+    }
+  
+    .organization-form-description {
+      font-size: 14px;
+    }
+  
+    .form-control {
+      padding: 8px;
+    }
+  }

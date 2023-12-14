@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class CreateOpportunitiesController < ApplicationController
   before_action :authenticate_user!, only: %i[new create]

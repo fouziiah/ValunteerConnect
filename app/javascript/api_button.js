@@ -7,7 +7,7 @@ $(function(){
         url: '/api/send_text',
         data: { opportunity_id: opportunityId }, 
         success: function(response) {
-          alert('API call successful! Message: ' + response);
+          alert('API call successful! Message sent! ')
         },
         error: function(error) {
           console.error(error);

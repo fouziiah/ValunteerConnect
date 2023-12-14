@@ -1,17 +1,20 @@
-<h1><%= @create_opportunity.title %></h1>
-<p><strong>Organization:</strong> <%= @create_opportunity.organization_name %></p>
-<p><strong>Description:</strong> <%= @create_opportunity.description %></p>
-<p><strong>Location:</strong> <%= @create_opportunity.location %></p>
-<button id="interestedBtn" data-opportunity-id="<%= @create_opportunity.id %>">Interested</button><br><br>
+<div class="opportunity-cont">
+<h1 class="opportunity-title"><%= @create_opportunity.title %></h1>
+<p class="opportunity-info"><strong>Organization:</strong> <%= @create_opportunity.organization_name %></p>
+<hr>
+<p class="opportunity-info"><%= @create_opportunity.description %></p>
+<p class="opportunity-info"><strong>Location:</strong> <%= @create_opportunity.location %></p>
+<button id="interestedBtn" class="interestedbutton" data-opportunity-id="<%= @create_opportunity.id %>">Interested</button><br><br>
 
 
-<button>
-  <%= link_to "Edit Opportunity", edit_opportunity_path(@create_opportunity) %>
-</button>
+
+  <%= link_to "🖊️", edit_opportunity_path(@create_opportunity),  class: "edit-button" %>
 
 
-<%= button_to "Delete Opportunity", create_opportunity_path(@create_opportunity), method: :delete, data: { confirm: "Are you sure?" } %>
+
+  <%= link_to "🗑", create_opportunity_path(@create_opportunity), method: :delete, data: { confirm: "Are you sure?"}, class: "delete-button" %>
 
 
-<%= link_to "Back to discover opportunities", search_opportunities_path %>
+  <%= link_to "Back", search_opportunities_path, class: "opportunity-buttons" %>
 
+</div>

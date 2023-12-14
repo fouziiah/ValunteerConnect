@@ -26,37 +26,114 @@
 }
 
 .container {
-    background-color: #353535;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 20px; 
     display: flex;
     height: 45px;
-    gap: 3rem;
     position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.nav-container{
+.nav-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 64em;
+  top: 2.2em;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  color: #48a1f9;
+}
+
+.sign-out {
+  position: relative;
+  background-color: #e6672c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 10px;
+  width: 100px; 
+  
+}
+
+.sign-out:hover {
+  background-color: #ff5533;
+}
+
+
+.logo img{
+    width: 6em;
+    height: auto;
     position: absolute;
-    right: 9em;
-    top: 32px;
+    bottom: 2px;
+    top: 9px;
 }
 
-.container a {
-    color: white;
-    text-decoration: none;
-    margin: 0 25px;
-    margin-top: 20px;
-}
+.logo-text {
+    margin-left: 5em; 
+    font-size: 22px; 
+    font-weight: bold;
+    position: absolute;
+  }
+  span{
+    top: 1.5em;
+  }
 
-.content {
-    max-width: 960px;
-    margin: 20px auto;
-
-}
-
-.sign-out-button {
-    position: relative;
-    top: 0.4em;
-    left: 77em;
-
-}
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .nav-container {
+      position: static;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .container a {
+      margin: 5px;
+    }
+  
+    .sign-out {
+      position: static;
+      margin-left: 100px;
+    }
+  
+    .logo img {
+      position: static;
+      margin-bottom: 10px;
+    }
+  
+    .logo-text {
+      position: static;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    span {
+      top: 0;
+    }
+  }
+  

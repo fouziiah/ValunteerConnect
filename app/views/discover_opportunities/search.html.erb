@@ -1,7 +1,7 @@
 <div class="search-box">
 <%= form_tag search_opportunities_path, method: :get, remote: true do %>
   <%= text_field_tag :search, params[:search], placeholder: "Search by title or location" %>
-  <%= submit_tag "Search" %>
+  <%= submit_tag "Search", class: "search-button"  %>
 <% end %>
 </div>
 <div id="search-results">

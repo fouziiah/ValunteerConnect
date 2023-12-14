@@ -1,7 +1,7 @@
 .volunteer-container {
-  margin-left: 15em;
-    height: 200em;
-    width: 50em;
+    margin-left: 12em;
+    height: 100%;
+    width: 43em;
     padding: 2em;
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -29,7 +29,7 @@
 
   .volunteer-container button {
     padding: 12px 24px;
-    background-color: #4caf50;
+    background-color: #48a1f9;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -39,7 +39,7 @@
   }
   
   .volunteer-container button:hover {
-    background-color: #45a049;
+    background-color: #48a1f9;
   }
   
 
@@ -52,12 +52,53 @@
   
 
   .volunteer-container a {
-    color: #4caf50;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
   }
   
-  .volunteer-container a:hover {
-    color: #45a049;
+  .opportunity-title:hover{
+    color: #e6672c;
+    cursor: pointer;
+  }
+
+
+  .aside{
+    width: 20em;
+    height: 44em;
+    background-color: #48a1f9;
+    position: absolute;
+    bottom: 3em;
+    top: 17.1em;
+    left: 59.1em;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .aside-spn{
+    position: absolute;
+    top: 17em;
+    left: 3em;
+    color: white;
+  }
+
+  .spn1{
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .spn2{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .aside-p1,
+  .aside-p2 {
+    font-size: 18.6px;
+  }
+
+  .spn3{
+    font-size: 24px;
+    font-weight: bold;
   }
