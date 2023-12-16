@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-  database: volunteer_production
+  url: <%= ENV['DATABASE_URL'] %>
