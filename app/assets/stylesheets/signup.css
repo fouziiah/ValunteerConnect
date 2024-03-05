@@ -4,11 +4,11 @@
     background-color: #6198d0;
     width: 28em;
     height: 570px;
-    margin: 3em 50em;
     padding: 35px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* left: 20px; */
-    right: 36px;
+    right: 29em;
+    top: 8em;
+
 }
 
 .signup-container h2 {
